@@ -1,0 +1,108 @@
+{
+  "id": "structured-credit",
+  "version": "0.1.0",
+  "asset_classes": [
+    "structured_credit"
+  ],
+  "require_labelled": false,
+  "nodes": [
+    {
+      "id": "mandate",
+      "depends_on": []
+    },
+    {
+      "id": "evidence",
+      "depends_on": [
+        "mandate"
+      ]
+    },
+    {
+      "id": "science-materiality",
+      "depends_on": [
+        "evidence"
+      ]
+    },
+    {
+      "id": "disclosure-policy",
+      "depends_on": [
+        "evidence"
+      ]
+    },
+    {
+      "id": "emissions",
+      "depends_on": [
+        "evidence"
+      ]
+    },
+    {
+      "id": "physical-risk",
+      "depends_on": [
+        "science-materiality"
+      ]
+    },
+    {
+      "id": "transition",
+      "depends_on": [
+        "science-materiality",
+        "disclosure-policy",
+        "emissions"
+      ]
+    },
+    {
+      "id": "scenarios",
+      "depends_on": [
+        "science-materiality",
+        "disclosure-policy"
+      ]
+    },
+    {
+      "id": "financial-transmission",
+      "depends_on": [
+        "physical-risk",
+        "transition",
+        "scenarios"
+      ]
+    },
+    {
+      "id": "structured-credit",
+      "depends_on": [
+        "financial-transmission"
+      ],
+      "when": "structured_credit"
+    },
+    {
+      "id": "portfolio",
+      "depends_on": [
+        "structured-credit"
+      ]
+    },
+    {
+      "id": "stewardship",
+      "depends_on": [
+        "portfolio"
+      ]
+    },
+    {
+      "id": "monitoring",
+      "depends_on": [
+        "portfolio"
+      ]
+    },
+    {
+      "id": "red-team",
+      "depends_on": [
+        "portfolio",
+        "stewardship",
+        "monitoring"
+      ]
+    },
+    {
+      "id": "investment-memo",
+      "depends_on": [
+        "red-team"
+      ]
+    }
+  ],
+  "human_review_required": true,
+  "automatic_execution": false
+}

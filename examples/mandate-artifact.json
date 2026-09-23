@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0",
+  "run_id": "5b2939634a654694a575c1d171e7e2c9",
+  "input_digest": "2419e715b67322f384d3960e1e4bc5bde2f7a8cc433dcca7ab6c213489c5a1d8",
+  "agent_id": "mandate",
+  "status": "COMPLETE",
+  "summary": "Synthetic replay of Mandate and instrument intake; illustrates the workflow contract, not a real investment assessment.",
+  "source_refs": [
+    "CFA-10-MANDATE",
+    "CFA-09-PORTFOLIO"
+  ],
+  "evidence_ids": [
+    "SYN-DATA",
+    "SYN-SCENARIOS"
+  ],
+  "findings": [
+    {
+      "kind": "source_method",
+      "statement": "Turn the investor request into a specific research mandate without inventing climate objectives.",
+      "time_basis": "timeless",
+      "topic": "methodology",
+      "evidence_ids": [],
+      "source_refs": [
+        "CFA-10-MANDATE",
+        "CFA-09-PORTFOLIO"
+      ]
+    }
+  ],
+  "data": {
+    "mandate_contract": {
+      "financial_objective": "Compare scenario financial exposures; synthetic research demonstration only.",
+      "climate_objective": "Financial risk integration, with climate contribution reported separately; no net-zero or exclusion mandate imposed.",
+      "base_currency": "USD",
+      "investment_horizon": "5 years; longer climate horizons considered qualitatively",
+      "benchmark": "No benchmark supplied; no relative-return claim",
+      "constraints": "No trading; no actual allocation; no public certification or external communications."
+    },
+    "instrument_scope": [
+      {
+        "id": "SYN-EQUITY",
+        "issuer_id": "CORP",
+        "asset_class": "equity",
+        "label": "none",
+        "currency": "USD"
+      }
+    ]
+  },
+  "assumptions": [
+    "All companies, securities and numerical paths are fictional demo inputs."
+  ],
+  "gaps": [],
+  "uncertainties": [
+    "No semantic model-output evaluation or live-source validation has been performed."
+  ],
+  "confidence": {
+    "value": 0.5,
+    "basis": "Fixed demonstration value; not a model-derived confidence or empirical calibration.",
+    "calibrated": false
+  },
+  "provenance": {
+    "provider": "deterministic_synthetic_replay",
+    "llm_called": false
+  }
+}

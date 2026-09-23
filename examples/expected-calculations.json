@@ -1,0 +1,61 @@
+{
+  "carbon_bridge": {
+    "chargeable_tco2e": 800000.0,
+    "gross_carbon_cost": 60000000.0,
+    "revenue_pass_through": 36000000.0,
+    "net_carbon_cost": 24000000.0,
+    "incremental_ebitda_impact": -24000000.0
+  },
+  "equity_valuation_million": {
+    "baseline": {
+      "explicit_pv": 615.6616581870169,
+      "terminal_pv": 1704.67717891966,
+      "enterprise_value": 2320.3388371066767,
+      "equity_value": 2020.3388371066767,
+      "value_per_share": 40.40677674213353
+    },
+    "managed_transition": {
+      "explicit_pv": 456.7675390740141,
+      "terminal_pv": 1287.978312961521,
+      "enterprise_value": 1744.745852035535,
+      "equity_value": 1444.745852035535,
+      "value_per_share": 28.894917040710702
+    },
+    "delayed_transition": {
+      "explicit_pv": 466.49516154624627,
+      "terminal_pv": 1041.7471648953479,
+      "enterprise_value": 1508.242326441594,
+      "equity_value": 1208.242326441594,
+      "value_per_share": 24.16484652883188
+    },
+    "physical_stress": {
+      "explicit_pv": 464.284007619281,
+      "terminal_pv": 1325.8600280486246,
+      "enterprise_value": 1790.1440356679057,
+      "equity_value": 1490.1440356679057,
+      "value_per_share": 29.802880713358114
+    }
+  },
+  "baseline_fcf_million": 140.0,
+  "illustrative_year1_fcf_million": 104.0,
+  "bond_stress_per_100": {
+    "base_value": 102.19498837221465,
+    "rate_only_value": 97.86485776219047,
+    "spread_only_value": 98.92507015235122,
+    "combined_value": 94.77016347420903,
+    "combined_change_pct": -7.265351282161625,
+    "interaction": 0.17522393188198748
+  },
+  "expected_loss_separate_sensitivity": 1.5,
+  "corporate_sleeve_waci": {
+    "full_waci": 380.0,
+    "known_weighted_contribution": 380.0,
+    "covered_only_waci": 380.0,
+    "coverage_weight": 1.0,
+    "missing_instruments": [],
+    "scope_basis": "1+2",
+    "reporting_year": "2025",
+    "units": "tCO2e/USD million revenue",
+    "interpretation": "Exposure metric, not financial loss or proof of real-world impact."
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "mode": "research",
+  "as_of": "2026-09-23",
+  "mandate": {
+    "financial_objective": "REPLACE_WITH_YOUR_FINANCIAL_OBJECTIVE",
+    "climate_objective": "REPLACE_WITH_YOUR_CLIMATE_OBJECTIVE",
+    "base_currency": "REPLACE_WITH_YOUR_BASE_CURRENCY",
+    "investment_horizon": "REPLACE_WITH_YOUR_INVESTMENT_HORIZON",
+    "benchmark": "REPLACE_WITH_YOUR_BENCHMARK",
+    "constraints": "REPLACE_WITH_YOUR_CONSTRAINTS"
+  },
+  "entities": [
+    {
+      "id": "ISSUER-REQUIRED",
+      "name": "REPLACE_WITH_VERIFIED_ISSUER",
+      "type": "corporate"
+    }
+  ],
+  "instruments": [
+    {
+      "id": "SECURITY-REQUIRED",
+      "issuer_id": "ISSUER-REQUIRED",
+      "asset_class": "equity",
+      "label": "none",
+      "currency": "USD"
+    }
+  ],
+  "freshness_days": {
+    "market_data": 3,
+    "issuer_disclosure": 550,
+    "policy_primary": 30,
+    "scenario_data": 400
+  },
+  "evidence": [],
+  "context": {
+    "instructions": "Template, not an issuer analysis. Fill all REPLACE values and add reviewed evidence before claiming facts. Freshness limits are illustrative and must be adopted or changed explicitly."
+  }
+}

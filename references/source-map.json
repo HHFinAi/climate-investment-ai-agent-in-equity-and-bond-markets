@@ -1,0 +1,354 @@
+{
+  "source_id": "CFA-CLIMATE-UPLOAD",
+  "filename": "CFA Climate.pdf",
+  "pdf_page_count": 897,
+  "sha256": "27f9813596046b3f03b9339918250350312d1a1a6c4111ec17d5ccb9d972bc98",
+  "source_identity": "CFA UK Certificate in Climate and Investing curriculum supplied by the user",
+  "publication_edition": "Not independently established. Core reviewed passages refer to 2021 materials.",
+  "page_convention": "One-indexed PDF pages. Printed page numbers restart by chapter; never substitute printed labels for PDF offsets.",
+  "review_scope": "Targeted operational conversion, not an exhaustive review of all 897 pages. Chapter introductions/contents mapped; selected investment, data, scenario, stewardship and client sections reviewed. No source text or page images redistributed.",
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "Introduction to Climate and Investing",
+      "pdf_start": 2,
+      "pdf_end": 44,
+      "workflow_use": "Mandate framing, mitigation/adaptation/resilience and instrument differences."
+    },
+    {
+      "chapter": 2,
+      "title": "Climate science and climate risks and considerations",
+      "pdf_start": 46,
+      "pdf_end": 106,
+      "workflow_use": "Physical and transition risk; hazard, exposure, vulnerability; uncertainty and natural capital."
+    },
+    {
+      "chapter": 3,
+      "title": "Regulation, policy response and the corporate reporting landscape",
+      "pdf_start": 108,
+      "pdf_end": 218,
+      "workflow_use": "Historical policy/disclosure framework; date-specific verification is required for use today."
+    },
+    {
+      "chapter": 4,
+      "title": "Climate change impacts and opportunities",
+      "pdf_start": 220,
+      "pdf_end": 314,
+      "workflow_use": "Financial transmission, sector opportunities, mitigation, adaptation and resilience."
+    },
+    {
+      "chapter": 5,
+      "title": "Climate risk measurement: data, metrics, targets and scenario analysis",
+      "pdf_start": 316,
+      "pdf_end": 449,
+      "workflow_use": "Evidence quality, emissions, targets, model selection, scenario analysis and its limits."
+    },
+    {
+      "chapter": 6,
+      "title": "Stewardship and engagement on climate",
+      "pdf_start": 451,
+      "pdf_end": 497,
+      "workflow_use": "Investor engagement, milestones and monitoring; external actions need separate approval."
+    },
+    {
+      "chapter": 7,
+      "title": "Listed investment instruments",
+      "pdf_start": 499,
+      "pdf_end": 627,
+      "workflow_use": "Primary equity, bond, labelled debt and listed real-asset integration."
+    },
+    {
+      "chapter": 8,
+      "title": "Climate change and private markets",
+      "pdf_start": 629,
+      "pdf_end": 729,
+      "workflow_use": "Context only: private-market and underlying real-asset differences; not a private-market execution module."
+    },
+    {
+      "chapter": 9,
+      "title": "Portfolio management",
+      "pdf_start": 731,
+      "pdf_end": 843,
+      "workflow_use": "Mandate-aware construction, climate metrics, benchmarks and attribution."
+    },
+    {
+      "chapter": 10,
+      "title": "Serving client needs",
+      "pdf_start": 845,
+      "pdf_end": 897,
+      "workflow_use": "Client mandate, accountability, investor disclosure and review."
+    }
+  ],
+  "anchors": [
+    {
+      "id": "CFA-01-FRAME",
+      "chapter": 1,
+      "section": "1.1",
+      "pdf_pages": [
+        8,
+        9,
+        10,
+        15,
+        24,
+        25,
+        26,
+        28,
+        29
+      ],
+      "method": "Physical/transition risks, mitigation/adaptation, instrument structure and climate versus ESG."
+    },
+    {
+      "id": "CFA-02-RISK",
+      "chapter": 2,
+      "section": "2.1–2.2",
+      "pdf_pages": [
+        59,
+        61,
+        62,
+        67,
+        68,
+        75,
+        76,
+        77,
+        80,
+        81
+      ],
+      "method": "Hazard is not loss: exposure, vulnerability, supply chains and stranded assets/liabilities."
+    },
+    {
+      "id": "CFA-03-DISCLOSURE",
+      "chapter": 3,
+      "section": "3.1–3.2",
+      "pdf_pages": [
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "method": "Policy/reporting context and explicit warning that regulatory material is time-sensitive."
+    },
+    {
+      "id": "CFA-04-TRANSMISSION",
+      "chapter": 4,
+      "section": "4.1.1",
+      "pdf_pages": [
+        225,
+        226
+      ],
+      "method": "Revenues, expenditure, assets/liabilities, capital/financing and free cash flows."
+    },
+    {
+      "id": "CFA-04-OPPORTUNITY",
+      "chapter": 4,
+      "section": "4.1; chapter introduction and contents",
+      "pdf_pages": [
+        220,
+        221,
+        222,
+        223
+      ],
+      "method": "Resource efficiency, energy source, products/services, markets and resilience."
+    },
+    {
+      "id": "CFA-05-DATA",
+      "chapter": 5,
+      "section": "5.1.1–5.1.2",
+      "pdf_pages": [
+        317,
+        318,
+        319,
+        320
+      ],
+      "method": "Data gaps, comparability, reporting boundaries, granular locations and transparent methods."
+    },
+    {
+      "id": "CFA-05-CARBON",
+      "chapter": 5,
+      "section": "5.1.4",
+      "pdf_pages": [
+        329,
+        330
+      ],
+      "method": "Scope aggregation, activity/revenue intensity, WACI and limitations."
+    },
+    {
+      "id": "CFA-05-SCENARIO",
+      "chapter": 5,
+      "section": "5.2.1–5.2.2",
+      "pdf_pages": [
+        351,
+        352,
+        353,
+        354,
+        355,
+        356,
+        357,
+        358
+      ],
+      "method": "Climate models, IAMs, scenarios and stress tests; compounded uncertainty and resolution limits."
+    },
+    {
+      "id": "CFA-06-ENGAGE",
+      "chapter": 6,
+      "section": "6.1.3",
+      "pdf_pages": [
+        451,
+        464,
+        465,
+        466,
+        467
+      ],
+      "method": "Prioritise material disclosure gaps, issuer dialogue and engagement objectives."
+    },
+    {
+      "id": "CFA-07-EQUITY",
+      "chapter": 7,
+      "section": "7.1.1–7.1.2",
+      "pdf_pages": [
+        500,
+        501,
+        502,
+        503,
+        504,
+        505
+      ],
+      "method": "Operational footprint and economic activity; shareholder rights; engagement limitations."
+    },
+    {
+      "id": "CFA-07-VALUATION",
+      "chapter": 7,
+      "section": "7.1.5",
+      "pdf_pages": [
+        544,
+        545,
+        546,
+        547,
+        548,
+        549,
+        550,
+        551
+      ],
+      "method": "Cash-flow and discount-rate routes; avoid double counting; pass-through and sensitivity."
+    },
+    {
+      "id": "CFA-07-FLOW",
+      "chapter": 7,
+      "section": "Figure 7.12; chapter printed page 50",
+      "pdf_pages": [
+        546
+      ],
+      "method": "Scenario pathways → economic shocks → asset value streams → financial impacts; inspected as page image."
+    },
+    {
+      "id": "CFA-07-CREDIT",
+      "chapter": 7,
+      "section": "7.2.1; 7.2.4–7.2.7",
+      "pdf_pages": [
+        552,
+        553,
+        554,
+        584,
+        585,
+        586,
+        589,
+        590,
+        591,
+        592
+      ],
+      "method": "Contractual structure, issuer/guarantor boundaries, rates/spreads, default/recovery and rating materiality."
+    },
+    {
+      "id": "CFA-07-LABEL",
+      "chapter": 7,
+      "section": "7.2.2–7.2.3",
+      "pdf_pages": [
+        557,
+        569,
+        570,
+        571,
+        577,
+        578,
+        579,
+        580
+      ],
+      "method": "Use-of-proceeds versus SLBs; allocation, reporting, KPI calibration and verification."
+    },
+    {
+      "id": "CFA-07-SOVEREIGN",
+      "chapter": 7,
+      "section": "7.2.4–7.2.6",
+      "pdf_pages": [
+        585,
+        586,
+        589,
+        590,
+        591
+      ],
+      "method": "Production/consumption accounting, GDP/population denominators, geography, fiscal capacity and currency."
+    },
+    {
+      "id": "CFA-08-CONTEXT",
+      "chapter": 8,
+      "section": "Chapter introduction and contents",
+      "pdf_pages": [
+        629,
+        630
+      ],
+      "method": "Private-market differences are supporting context, not an added direct-investment mandate."
+    },
+    {
+      "id": "CFA-09-PORTFOLIO",
+      "chapter": 9,
+      "section": "9.1.1–9.1.2; 9.3.3",
+      "pdf_pages": [
+        731,
+        732,
+        733,
+        734,
+        735,
+        736,
+        737,
+        807,
+        808
+      ],
+      "method": "Financial goals versus climate outcomes, top-down/bottom-up integration and forward-looking metrics."
+    },
+    {
+      "id": "CFA-10-MANDATE",
+      "chapter": 10,
+      "section": "10.1.1",
+      "pdf_pages": [
+        845,
+        846,
+        847,
+        848,
+        849
+      ],
+      "method": "Define client beliefs, goals, constraints and relevant time horizon before implementation."
+    },
+    {
+      "id": "CFA-10-REPORT",
+      "chapter": 10,
+      "section": "10.2.1",
+      "pdf_pages": [
+        864,
+        865,
+        866
+      ],
+      "method": "Accountability for mandate delivery, exposure, process, engagement and data limitations."
+    }
+  ],
+  "visual_checks": [
+    {
+      "pdf_page": 330,
+      "item": "WACI equation and definitions",
+      "purpose": "Resolve garbled parsed equation."
+    },
+    {
+      "pdf_page": 546,
+      "item": "Figure 7.12",
+      "purpose": "Verify scenario-to-financial-impact workflow."
+    }
+  ]
+}

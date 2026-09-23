@@ -1,0 +1,89 @@
+{
+  "description": "Entirely fictional demonstration. Monetary statements use USD millions except bond cash flows per 100 face and carbon bridge in USD.",
+  "carbon_inputs": {
+    "covered_emissions_tco2e": 1000000,
+    "free_allowances_tco2e": 200000,
+    "carbon_price_per_tonne": 75,
+    "pass_through": 0.6,
+    "baseline_net_carbon_cost": 0
+  },
+  "cash_flow_scenarios_million": {
+    "baseline": [
+      140,
+      150,
+      160,
+      170,
+      180
+    ],
+    "managed_transition": [
+      104,
+      110,
+      118,
+      126,
+      136
+    ],
+    "delayed_transition": [
+      140,
+      145,
+      100,
+      95,
+      110
+    ],
+    "physical_stress": [
+      100,
+      115,
+      120,
+      130,
+      140
+    ]
+  },
+  "discount_rate": 0.09,
+  "terminal_growth": 0.02,
+  "cash_million": 100,
+  "debt_million": 400,
+  "diluted_shares_million": 50,
+  "bond_cash_flows_per_100": [
+    {
+      "time_years": 1,
+      "amount": 5
+    },
+    {
+      "time_years": 2,
+      "amount": 5
+    },
+    {
+      "time_years": 3,
+      "amount": 5
+    },
+    {
+      "time_years": 4,
+      "amount": 5
+    },
+    {
+      "time_years": 5,
+      "amount": 105
+    }
+  ],
+  "corporate_sleeve": [
+    {
+      "instrument_id": "SYN-EQ-A",
+      "asset_class": "equity",
+      "weight": 0.6,
+      "emissions_tco2e": 1000000,
+      "revenue_million": 2000,
+      "scope_basis": "1+2",
+      "revenue_currency": "USD",
+      "reporting_year": "2025"
+    },
+    {
+      "instrument_id": "SYN-CB-B",
+      "asset_class": "corporate_bond",
+      "weight": 0.4,
+      "emissions_tco2e": 200000,
+      "revenue_million": 1000,
+      "scope_basis": "1+2",
+      "revenue_currency": "USD",
+      "reporting_year": "2025"
+    }
+  ]
+}

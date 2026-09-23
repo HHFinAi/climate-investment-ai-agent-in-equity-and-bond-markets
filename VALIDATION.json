@@ -1,0 +1,37 @@
+{
+  "delivery_date": "2026-09-23",
+  "python_version": "3.13.5",
+  "platform": "Linux",
+  "unit_tests": {
+    "run": 116,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "workflow_routes": {
+    "corporate-bond": 15,
+    "equity": 15,
+    "labelled-bond": 16,
+    "multi-asset": 20,
+    "municipal-bond": 15,
+    "sovereign-bond": 15,
+    "structured-credit": 15
+  },
+  "completed_smoke_run": "DEMO_COMPLETE_NOT_APPROVED",
+  "remote_repository_created": false,
+  "remote_ci_executed": false,
+  "embedded_llm": false,
+  "live_sources_connected": false,
+  "llm_output_benchmark": "NOT_RUN",
+  "scientific_or_return_prediction_calibration": "NOT_RUN",
+  "current_regulatory_review": "NOT_PERFORMED",
+  "source_pdf_distributed": false,
+  "human_investment_approval_for_demo": false,
+  "independent_json_schema_check": {
+    "schemas": 3,
+    "request_fixtures": 7,
+    "agent_artifacts": 111,
+    "status": "PASS",
+    "library": "jsonschema available only in authoring environment; not a runtime dependency"
+  }
+}

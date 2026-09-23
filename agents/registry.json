@@ -1,0 +1,295 @@
+{
+  "version": "0.1.0",
+  "agents": [
+    {
+      "id": "mandate",
+      "title": "Mandate and instrument intake",
+      "path": "agents/00-mandate.md",
+      "source_refs": [
+        "CFA-10-MANDATE",
+        "CFA-09-PORTFOLIO"
+      ],
+      "required_data_keys": [
+        "mandate_contract",
+        "instrument_scope"
+      ],
+      "purpose": "Turn the investor request into a specific research mandate without inventing climate objectives."
+    },
+    {
+      "id": "evidence",
+      "title": "Evidence and entity-boundary analyst",
+      "path": "agents/01-evidence.md",
+      "source_refs": [
+        "CFA-05-DATA",
+        "CFA-07-CREDIT"
+      ],
+      "required_data_keys": [
+        "evidence_inventory",
+        "entity_map"
+      ],
+      "purpose": "Build the common evidence base and prevent entity, date, unit and scope mismatches."
+    },
+    {
+      "id": "science-materiality",
+      "title": "Climate science and materiality analyst",
+      "path": "agents/02-science-materiality.md",
+      "source_refs": [
+        "CFA-01-FRAME",
+        "CFA-02-RISK"
+      ],
+      "required_data_keys": [
+        "materiality_map",
+        "horizon_map"
+      ],
+      "purpose": "Identify which climate mechanisms could matter for this investment and at what horizon."
+    },
+    {
+      "id": "disclosure-policy",
+      "title": "Policy and disclosure context analyst",
+      "path": "agents/03-disclosure-policy.md",
+      "source_refs": [
+        "CFA-03-DISCLOSURE",
+        "CFA-10-REPORT"
+      ],
+      "required_data_keys": [
+        "policy_register",
+        "disclosure_gaps"
+      ],
+      "purpose": "Translate relevant disclosure and policy context into dated analytical inputs, not political judgments."
+    },
+    {
+      "id": "emissions",
+      "title": "Emissions, metrics and targets analyst",
+      "path": "agents/04-emissions.md",
+      "source_refs": [
+        "CFA-05-CARBON",
+        "CFA-05-DATA",
+        "CFA-07-SOVEREIGN"
+      ],
+      "required_data_keys": [
+        "emissions_inventory",
+        "target_assessment"
+      ],
+      "purpose": "Produce comparable climate metrics without confusing footprint, risk and real-world impact."
+    },
+    {
+      "id": "physical-risk",
+      "title": "Physical risk, adaptation and resilience analyst",
+      "path": "agents/05-physical-risk.md",
+      "source_refs": [
+        "CFA-02-RISK",
+        "CFA-04-OPPORTUNITY",
+        "CFA-05-DATA"
+      ],
+      "required_data_keys": [
+        "physical_exposures",
+        "adaptation_options"
+      ],
+      "purpose": "Translate location-specific hazards and adaptive capacity into investment-relevant exposures."
+    },
+    {
+      "id": "transition",
+      "title": "Transition risk and climate-solutions analyst",
+      "path": "agents/06-transition.md",
+      "source_refs": [
+        "CFA-04-OPPORTUNITY",
+        "CFA-04-TRANSMISSION",
+        "CFA-07-EQUITY"
+      ],
+      "required_data_keys": [
+        "transition_exposures",
+        "opportunity_map"
+      ],
+      "purpose": "Assess how business models and competitive economics change under specified transitions."
+    },
+    {
+      "id": "scenarios",
+      "title": "Scenario design and model-risk analyst",
+      "path": "agents/07-scenarios.md",
+      "source_refs": [
+        "CFA-05-SCENARIO",
+        "CFA-07-FLOW"
+      ],
+      "required_data_keys": [
+        "scenario_register",
+        "model_limitations"
+      ],
+      "purpose": "Select coherent what-if pathways appropriate to the mandate rather than predict one climate future."
+    },
+    {
+      "id": "financial-transmission",
+      "title": "Financial transmission and double-counting controller",
+      "path": "agents/08-financial-transmission.md",
+      "source_refs": [
+        "CFA-04-TRANSMISSION",
+        "CFA-07-FLOW",
+        "CFA-07-VALUATION"
+      ],
+      "required_data_keys": [
+        "financial_bridge",
+        "risk_treatment_register"
+      ],
+      "purpose": "Connect the shared climate analysis to financial models through explicit and non-duplicated channels."
+    },
+    {
+      "id": "equity",
+      "title": "Listed equity valuation analyst",
+      "path": "agents/09-equity.md",
+      "source_refs": [
+        "CFA-07-EQUITY",
+        "CFA-07-VALUATION"
+      ],
+      "required_data_keys": [
+        "equity_valuation",
+        "variant_and_sensitivity"
+      ],
+      "purpose": "Produce an equity-specific climate-integrated valuation, not an ESG score relabelled as a price target."
+    },
+    {
+      "id": "corporate-credit",
+      "title": "Corporate bond and credit analyst",
+      "path": "agents/10-corporate-credit.md",
+      "source_refs": [
+        "CFA-07-CREDIT",
+        "CFA-07-VALUATION"
+      ],
+      "required_data_keys": [
+        "credit_assessment",
+        "bond_valuation"
+      ],
+      "purpose": "Evaluate repayment capacity, legal recourse and price risk separately from climate labels."
+    },
+    {
+      "id": "sovereign",
+      "title": "Sovereign bond analyst",
+      "path": "agents/11-sovereign.md",
+      "source_refs": [
+        "CFA-07-SOVEREIGN",
+        "CFA-07-CREDIT"
+      ],
+      "required_data_keys": [
+        "sovereign_transmission",
+        "rates_and_credit"
+      ],
+      "purpose": "Assess sovereign financial exposures without turning country analysis into political rankings."
+    },
+    {
+      "id": "municipal",
+      "title": "Municipal and sub-sovereign bond analyst",
+      "path": "agents/12-municipal.md",
+      "source_refs": [
+        "CFA-07-SOVEREIGN",
+        "CFA-07-CREDIT"
+      ],
+      "required_data_keys": [
+        "local_exposure",
+        "repayment_analysis"
+      ],
+      "purpose": "Connect geographically concentrated climate exposures to the bond’s actual repayment source."
+    },
+    {
+      "id": "labelled-debt",
+      "title": "Green, sustainability-linked and transition bond analyst",
+      "path": "agents/13-labelled-debt.md",
+      "source_refs": [
+        "CFA-07-LABEL",
+        "CFA-07-CREDIT"
+      ],
+      "required_data_keys": [
+        "label_assessment",
+        "contract_and_impact"
+      ],
+      "purpose": "Assess label integrity and climate contribution alongside, not instead of, obligor credit quality."
+    },
+    {
+      "id": "structured-credit",
+      "title": "Structured credit and listed real-asset analyst",
+      "path": "agents/14-structured-credit.md",
+      "source_refs": [
+        "CFA-07-CREDIT",
+        "CFA-08-CONTEXT",
+        "CFA-02-RISK"
+      ],
+      "required_data_keys": [
+        "collateral_analysis",
+        "structural_limits"
+      ],
+      "purpose": "Trace physical and transition risk through collateral and contractual structure."
+    },
+    {
+      "id": "portfolio",
+      "title": "Portfolio construction and attribution analyst",
+      "path": "agents/15-portfolio.md",
+      "source_refs": [
+        "CFA-09-PORTFOLIO",
+        "CFA-05-CARBON",
+        "CFA-07-SOVEREIGN"
+      ],
+      "required_data_keys": [
+        "portfolio_assessment",
+        "constraint_checks"
+      ],
+      "purpose": "Aggregate decision-relevant exposures while preserving financial and climate objectives separately."
+    },
+    {
+      "id": "stewardship",
+      "title": "Stewardship and engagement planner",
+      "path": "agents/16-stewardship.md",
+      "source_refs": [
+        "CFA-06-ENGAGE",
+        "CFA-10-REPORT"
+      ],
+      "required_data_keys": [
+        "engagement_plan",
+        "approval_requirements"
+      ],
+      "purpose": "Convert material research gaps into measurable issuer-engagement objectives."
+    },
+    {
+      "id": "monitoring",
+      "title": "Monitoring and thesis-maintenance analyst",
+      "path": "agents/17-monitoring.md",
+      "source_refs": [
+        "CFA-06-ENGAGE",
+        "CFA-10-REPORT",
+        "CFA-09-PORTFOLIO"
+      ],
+      "required_data_keys": [
+        "monitoring_plan",
+        "reopen_triggers"
+      ],
+      "purpose": "Define how the decision should be revisited as evidence and exposures evolve."
+    },
+    {
+      "id": "red-team",
+      "title": "Independent challenge and release-control analyst",
+      "path": "agents/18-red-team.md",
+      "source_refs": [
+        "CFA-05-DATA",
+        "CFA-05-SCENARIO",
+        "CFA-07-VALUATION",
+        "CFA-10-REPORT"
+      ],
+      "required_data_keys": [
+        "issues",
+        "release_recommendation"
+      ],
+      "purpose": "Challenge the thesis and enforce evidence, scope and arithmetic controls before investment review."
+    },
+    {
+      "id": "investment-memo",
+      "title": "Investment committee and client-reporting editor",
+      "path": "agents/19-investment-memo.md",
+      "source_refs": [
+        "CFA-10-MANDATE",
+        "CFA-10-REPORT",
+        "CFA-09-PORTFOLIO"
+      ],
+      "required_data_keys": [
+        "investment_case",
+        "client_disclosure"
+      ],
+      "purpose": "Synthesize the reviewed work into a decision document accountable to the mandate."
+    }
+  ]
+}

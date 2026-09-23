@@ -1,0 +1,134 @@
+{
+  "id": "labelled-bond",
+  "version": "0.1.0",
+  "asset_classes": [
+    "corporate_bond",
+    "sovereign_bond",
+    "municipal_bond"
+  ],
+  "require_labelled": true,
+  "nodes": [
+    {
+      "id": "mandate",
+      "depends_on": []
+    },
+    {
+      "id": "evidence",
+      "depends_on": [
+        "mandate"
+      ]
+    },
+    {
+      "id": "science-materiality",
+      "depends_on": [
+        "evidence"
+      ]
+    },
+    {
+      "id": "disclosure-policy",
+      "depends_on": [
+        "evidence"
+      ]
+    },
+    {
+      "id": "emissions",
+      "depends_on": [
+        "evidence"
+      ]
+    },
+    {
+      "id": "physical-risk",
+      "depends_on": [
+        "science-materiality"
+      ]
+    },
+    {
+      "id": "transition",
+      "depends_on": [
+        "science-materiality",
+        "disclosure-policy",
+        "emissions"
+      ]
+    },
+    {
+      "id": "scenarios",
+      "depends_on": [
+        "science-materiality",
+        "disclosure-policy"
+      ]
+    },
+    {
+      "id": "financial-transmission",
+      "depends_on": [
+        "physical-risk",
+        "transition",
+        "scenarios"
+      ]
+    },
+    {
+      "id": "corporate-credit",
+      "depends_on": [
+        "financial-transmission"
+      ],
+      "when": "corporate_bond"
+    },
+    {
+      "id": "sovereign",
+      "depends_on": [
+        "financial-transmission"
+      ],
+      "when": "sovereign_bond"
+    },
+    {
+      "id": "municipal",
+      "depends_on": [
+        "financial-transmission"
+      ],
+      "when": "municipal_bond"
+    },
+    {
+      "id": "labelled-debt",
+      "depends_on": [
+        "financial-transmission"
+      ],
+      "when": "labelled"
+    },
+    {
+      "id": "portfolio",
+      "depends_on": [
+        "corporate-credit",
+        "sovereign",
+        "municipal",
+        "labelled-debt"
+      ]
+    },
+    {
+      "id": "stewardship",
+      "depends_on": [
+        "portfolio"
+      ]
+    },
+    {
+      "id": "monitoring",
+      "depends_on": [
+        "portfolio"
+      ]
+    },
+    {
+      "id": "red-team",
+      "depends_on": [
+        "portfolio",
+        "stewardship",
+        "monitoring"
+      ]
+    },
+    {
+      "id": "investment-memo",
+      "depends_on": [
+        "red-team"
+      ]
+    }
+  ],
+  "human_review_required": true,
+  "automatic_execution": false
+}

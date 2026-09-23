@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "mode": "demo",
+  "as_of": "2026-09-23",
+  "mandate": {
+    "financial_objective": "Compare scenario financial exposures; synthetic research demonstration only.",
+    "climate_objective": "Financial risk integration, with climate contribution reported separately; no net-zero or exclusion mandate imposed.",
+    "base_currency": "USD",
+    "investment_horizon": "5 years; longer climate horizons considered qualitatively",
+    "benchmark": "No benchmark supplied; no relative-return claim",
+    "constraints": "No trading; no actual allocation; no public certification or external communications."
+  },
+  "entities": [
+    {
+      "id": "CORP",
+      "name": "Harbor Materials (fictional)",
+      "type": "corporate"
+    }
+  ],
+  "instruments": [
+    {
+      "id": "SYN-EQUITY",
+      "issuer_id": "CORP",
+      "asset_class": "equity",
+      "label": "none",
+      "currency": "USD"
+    }
+  ],
+  "freshness_days": {
+    "market_data": 3,
+    "issuer_disclosure": 550,
+    "policy_primary": 30,
+    "scenario_data": 400
+  },
+  "evidence": [
+    {
+      "id": "SYN-DATA",
+      "kind": "synthetic",
+      "title": "Fictional issuer and instrument inputs",
+      "locator": "examples/synthetic-financials.json",
+      "summary": "Illustrative financial and emissions values, not observations.",
+      "entity_scope": "Fictional corporate and portfolio examples",
+      "as_of": "2026-09-23",
+      "retrieved_on": "2026-09-23",
+      "review_status": "SYNTHETIC"
+    },
+    {
+      "id": "SYN-SCENARIOS",
+      "kind": "synthetic",
+      "title": "Fictional sensitivity paths",
+      "locator": "examples/synthetic-financials.json#cash_flow_scenarios_million",
+      "summary": "Unweighted hypothetical cash flows, not NGFS, IEA or other published model output.",
+      "entity_scope": "Fictional illustrative issuer",
+      "as_of": "2026-09-23",
+      "retrieved_on": "2026-09-23",
+      "review_status": "SYNTHETIC"
+    }
+  ],
+  "context": {
+    "freshness_policy_note": "Illustrative engineering policy; not specified by CFA curriculum or a regulatory standard."
+  }
+}

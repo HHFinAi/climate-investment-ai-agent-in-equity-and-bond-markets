@@ -1,0 +1,180 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Agent result envelope",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "agent_id",
+    "status",
+    "summary",
+    "source_refs",
+    "evidence_ids",
+    "findings",
+    "data",
+    "assumptions",
+    "gaps",
+    "uncertainties",
+    "confidence",
+    "run_id",
+    "input_digest"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "agent_id": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "COMPLETE",
+        "NEEDS_DATA",
+        "BLOCKED"
+      ]
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true,
+      "minItems": 1
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "kind",
+          "statement",
+          "time_basis",
+          "topic",
+          "evidence_ids",
+          "source_refs"
+        ],
+        "properties": {
+          "kind": {
+            "enum": [
+              "source_method",
+              "fact",
+              "inference",
+              "assumption",
+              "calculation"
+            ]
+          },
+          "statement": {
+            "type": "string",
+            "minLength": 1
+          },
+          "time_basis": {
+            "enum": [
+              "historical",
+              "as_of",
+              "scenario",
+              "timeless"
+            ]
+          },
+          "topic": {
+            "enum": [
+              "financial",
+              "climate",
+              "policy",
+              "methodology",
+              "governance"
+            ]
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "source_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "calculation_basis": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "data": {
+      "type": "object"
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "gaps": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "uncertainties": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "confidence": {
+      "type": "object",
+      "required": [
+        "value",
+        "basis",
+        "calibrated"
+      ],
+      "properties": {
+        "value": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "basis": {
+          "type": "string",
+          "minLength": 1
+        },
+        "calibrated": {
+          "const": false
+        }
+      }
+    },
+    "run_id": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{32}$"
+    },
+    "input_digest": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    }
+  }
+}
