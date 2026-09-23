@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.0",
+  "engine_version": "0.1.0",
+  "claim_type": "inspectable_research_process_controls",
+  "independent_certification": false,
+  "claims": [
+    {
+      "id": "IQ-01",
+      "claim": "Evidence references are traceable.",
+      "implementation": {
+        "path": "climate_agent/validation.py",
+        "symbol": "validate_artifact"
+      },
+      "tests": {
+        "path": "tests/test_validation.py",
+        "symbols": [
+          "test_unknown_evidence",
+          "test_current_fact_unreviewed_rejected"
+        ]
+      },
+      "boundary": "A valid reference and review flag do not prove source truth or citation support."
+    },
+    {
+      "id": "IQ-02",
+      "claim": "Facts, assumptions and calculations are distinguishable.",
+      "implementation": {
+        "path": "climate_agent/validation.py",
+        "symbol": "validate_artifact"
+      },
+      "tests": {
+        "path": "tests/test_validation.py",
+        "symbols": [
+          "test_no_fact_from_textbook_alone",
+          "test_no_fact_from_assumption"
+        ]
+      },
+      "boundary": "Checks use declared categories; semantic misclassification remains possible."
+    },
+    {
+      "id": "IQ-03",
+      "claim": "Current facts use explicit evidence-date and primary-policy rules.",
+      "implementation": {
+        "path": "climate_agent/validation.py",
+        "symbol": "validate_artifact"
+      },
+      "tests": {
+        "path": "tests/test_validation.py",
+        "symbols": [
+          "test_stale_market_fact",
+          "test_current_fact_requires_freshness_policy",
+          "test_policy_requires_primary_record"
+        ]
+      },
+      "boundary": "Freshness thresholds are user policy; recency does not prove legal applicability."
+    },
+    {
+      "id": "IQ-04",
+      "claim": "A run preserves its input and instruction context.",
+      "implementation": {
+        "path": "climate_agent/workflow.py",
+        "symbol": "load_state"
+      },
+      "tests": {
+        "path": "tests/test_workflow.py",
+        "symbols": [
+          "test_frozen_input_change_detected",
+          "test_wrong_input_digest_rejected"
+        ]
+      },
+      "boundary": "Frozen metadata is not automatic archival of source files or reproducible LLM output."
+    },
+    {
+      "id": "IQ-05",
+      "claim": "Revisions invalidate downstream conclusions and prior review.",
+      "implementation": {
+        "path": "climate_agent/workflow.py",
+        "symbol": "submit"
+      },
+      "tests": {
+        "path": "tests/test_workflow.py",
+        "symbols": [
+          "test_resubmit_invalidates_descendants",
+          "test_revision_invalidates_human_review"
+        ]
+      },
+      "boundary": "Controls apply through the engine; direct local editing is outside controlled submission."
+    },
+    {
+      "id": "IQ-06",
+      "claim": "Declared material gaps and review issues can block approval.",
+      "implementation": {
+        "path": "climate_agent/workflow.py",
+        "symbol": "human_review"
+      },
+      "tests": {
+        "path": "tests/test_workflow.py",
+        "symbols": [
+          "test_needs_data_stops_descendants",
+          "test_material_issue_blocks_approval"
+        ]
+      },
+      "boundary": "Undeclared gaps still require a competent analyst to identify them."
+    },
+    {
+      "id": "IQ-07",
+      "claim": "Equity, credit and labelled-debt research are routed separately.",
+      "implementation": {
+        "path": "climate_agent/workflow.py",
+        "symbol": "select_nodes"
+      },
+      "tests": {
+        "path": "tests/test_workflow.py",
+        "symbols": [
+          "test_labelled_sovereign_uses_sovereign_not_corporate_credit",
+          "test_label_requires_additional_route"
+        ]
+      },
+      "boundary": "Routing does not replace credit, legal or specialist structured-pricing diligence."
+    },
+    {
+      "id": "IQ-08",
+      "claim": "Quantitative guardrails reject specified modelling errors.",
+      "implementation": {
+        "path": "climate_agent/calculations.py",
+        "symbol": "validate_treatments"
+      },
+      "tests": {
+        "path": "tests/test_calculations.py",
+        "symbols": [
+          "test_duplicate_climate_treatment",
+          "test_scenario_weights_no_renormalisation",
+          "test_rate_spread_separated"
+        ]
+      },
+      "boundary": "These are scoped arithmetic/identity checks, not a complete model-risk or semantic audit."
+    },
+    {
+      "id": "IQ-09",
+      "claim": "Human research decisions are recorded without trade authority.",
+      "implementation": {
+        "path": "climate_agent/workflow.py",
+        "symbol": "human_review"
+      },
+      "tests": {
+        "path": "tests/test_workflow.py",
+        "symbols": [
+          "test_human_attestation_required",
+          "test_demo_cannot_be_approved",
+          "test_explicit_no_execution"
+        ]
+      },
+      "boundary": "Attestation is not authenticated identity, independent assurance or trade authorization."
+    }
+  ]
+}

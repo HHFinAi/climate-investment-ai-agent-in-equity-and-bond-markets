@@ -1,0 +1,32 @@
+name: Validate climate investment workflow
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ['3.10', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Unit and integration tests (synthetic, offline)
+        run: python -m unittest discover -s tests -v
+      - name: Validate package and source references
+        run: python scripts/check_repository.py
+      - name: Check evidence claims and documentation links
+        run: python scripts/check_documentation.py
+      - name: Verify release file hashes
+        run: python -c "from pathlib import Path; from scripts.publish_github import release_files; print(len(release_files(Path('.'))), 'release files verified')"
+      - name: Synthetic multi-asset smoke run
+        run: |
+          python -m climate_agent demo --workflow multi-asset --out runs/ci-demo
+          python -m climate_agent status --run runs/ci-demo

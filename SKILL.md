@@ -1,7 +1,8 @@
 ---
 name: climate-investment-ai-agent-in-equity-and-bond-markets
 description: >-
-  Run source-grounded climate investment research for listed equities and bonds.
+  Coordinate institutional-quality climate investment research for equities and bonds
+  with traceable evidence references and auditable local research records.
   Coordinates mandate intake, evidence, physical and transition risk, emissions,
   scenarios, financial transmission, separate equity and credit valuation,
   green and sustainability-linked bond analysis, portfolio review, stewardship,
@@ -15,6 +16,8 @@ metadata:
 ---
 
 # Climate Investment AI Agent in Equity and Bond Markets
+
+Institutional quality describes inspectable workflow controls, not independent audit certification. See [evidence boundaries](docs/EVIDENCE_AUDIT.md) and [quality controls](docs/INSTITUTIONAL_QUALITY.md).
 
 Read `AGENTS.md` before acting. The source-grounded workflow is in `WORKFLOW.md`; executable task definitions are in `workflows/` and role instructions in `agents/`. This is one composable skill with twenty roles, not twenty mutually competing automatic triggers.
 
