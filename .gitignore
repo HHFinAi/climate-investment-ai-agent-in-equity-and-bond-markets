@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+*.key
+*.pem
+*.pdf
+.DS_Store
+runs/
+local_sources/
+data/private/
+dist/

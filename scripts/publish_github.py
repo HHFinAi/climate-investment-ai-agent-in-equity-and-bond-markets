@@ -19,7 +19,7 @@ def safe_path(path: str) -> bool:
     if any(x in p.parts for x in ('.git','__pycache__','runs','local_sources','.venv','private')): return False
     if p.name.startswith('.env') or p.name=='.DS_Store': return False
     if p.suffix.lower() in ('.pdf','.pem','.key','.p12','.pfx','.zip','.gz','.png','.jpg'): return False
-    return p.suffix.lower() in ('.md','.json','.py','.csv','.txt','.yml','.yaml') or p.name in ('.gitignore','.gitattributes','VERSION')
+    return p.suffix.lower() in ('.md','.json','.py','.csv','.txt','.yml','.yaml') or p.name in ('.gitignore','.gitattributes','VERSION','LICENSE','CITATION.cff')
 
 def release_files(root: Path) -> list[str]:
     manifest_path=root/'FILE_MANIFEST.json'

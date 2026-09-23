@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "Please cite this software and identify the exact commit used; this is not an audit certification."
+type: software
+title: "Climate Investment AI Agent in Equity and Bond Markets"
+authors:
+  - name: "HHFinAi"
+    website: "https://github.com/HHFinAi"
+version: "0.1.0"
+date-released: 2026-09-23
+repository-code: "https://github.com/HHFinAi/climate-investment-ai-agent-in-equity-and-bond-markets"
+url: "https://github.com/HHFinAi/climate-investment-ai-agent-in-equity-and-bond-markets"
+license: MIT
+abstract: >-
+  Human-reviewed climate investment research workflow for equities and bonds,
+  with traceable evidence references, auditable local research records,
+  instrument-specific handoffs, scenario analysis and explicit model boundaries.
+  Institutional quality describes process controls, not independent certification.
+keywords:
+  - climate investment
+  - equity research
+  - fixed income
+  - evidence provenance
+  - audit trail
+  - human review

@@ -1,12 +1,35 @@
 # Climate Investment AI Agent in Equity and Bond Markets
 
-**A source-grounded, human-reviewed research workflow for HHFinAi.**
+**Built for institutional-quality climate investment research—with a traceable, auditable evidence layer.**
 
-Version **0.1.0** · **20 analyst roles** · **7 routed workflows** · Python standard library · No autonomous trading
+The **Climate Investment AI Agent by HHFinAi** is a Python research workflow for institutional equity analysts, fixed-income investors, portfolio managers and investment committees. It connects climate-risk analysis to equity valuation, bond credit analysis and portfolio review while preserving evidence references, dated source records, analytical assumptions, calculation explanations, revisions and human research decisions.
 
-This project turns the user-supplied **897-page CFA UK climate-investing curriculum** into operational analyst handoffs. The source remains the methodological foundation. Original workflow engineering, calculation implementations, validation rules and synthetic examples are separately identified as additions—not presented as CFA-authored software or a substitute for the curriculum.
+**Inspect the evidence behind the conclusion—not just the generated narrative.** Institutional quality here means inspectable research-process controls. It does **not** mean independently audited, production-certified, or guaranteed investment accuracy.
 
-**GitHub Desktop edition:** complete local repository package prepared for `HHFinAi/climate-investment-ai-agent-in-equity-and-bond-markets`, private. Start with [START_HERE_GITHUB_DESKTOP.md](START_HERE_GITHUB_DESKTOP.md) to copy, commit and publish using the desktop app. No terminal or GitHub CLI is needed for that publishing route. Remote publication is performed by the repository owner; it was not performed in the authoring environment.
+Engine **0.1.0** · **20 specialist roles** · **7 instrument-aware workflows** · Python **3.10+** · Human review · No autonomous trading
+
+[![Workflow validation](https://github.com/HHFinAi/climate-investment-ai-agent-in-equity-and-bond-markets/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/HHFinAi/climate-investment-ai-agent-in-equity-and-bond-markets/actions/workflows/validate.yml)
+
+[Evidence and audit trail](docs/EVIDENCE_AUDIT.md) · [Institutional-quality controls](docs/INSTITUTIONAL_QUALITY.md) · [FAQ](docs/FAQ.md) · [Workflow](WORKFLOW.md) · [Validation scope](docs/VALIDATION_2026-09-23.md) · [Software citation](CITATION.cff)
+
+## What makes the evidence layer traceable and auditable?
+
+| Investment-research requirement | Implemented control | Inspect the evidence |
+|---|---|---|
+| Trace findings to registered sources | Evidence IDs, source locators, entity scope, observation/retrieval dates and declared review status. | [Data contract](references/data-contract.md), [validation code](climate_agent/validation.py) |
+| Separate evidence from judgment | Findings distinguish facts, inferences, assumptions, calculations and source methods; calculations require a stated basis. | [Output schema](schemas/agent-output.schema.json), [validation tests](tests/test_validation.py) |
+| Reconstruct the analytical context | Run inputs, selected roles, instructions and methodology map are frozen with a SHA-256 digest. | [State engine](climate_agent/workflow.py), [audit walkthrough](docs/EVIDENCE_AUDIT.md) |
+| Avoid relying on superseded analysis | Revisions archive prior artifacts, invalidate affected downstream work and clear prior review. | [Workflow tests](tests/test_workflow.py) |
+| Expose material missing information | `NEEDS_DATA` and `BLOCKED` stop dependent work; declared unresolved material/critical review issues block approval. | [Claim-to-control matrix](docs/INSTITUTIONAL_QUALITY.md) |
+| Record accountable research decisions | Human-review attestation, rationale and packet digest; no research approval for demo/source-study runs. | [Review implementation](climate_agent/workflow.py) |
+
+**Auditable means reviewable local research records—not tamper-proof recordkeeping.** Evidence-review flags are analyst/host attestations. The engine does not authenticate reviewer identity, independently verify source truth, archive every linked source document, or prove that a citation supports the associated prose. [Read the control boundaries](docs/EVIDENCE_AUDIT.md#control-boundaries).
+
+## Who is this agent for?
+
+**Equity research teams** can organize physical/transition risk, competitive economics, climate-adjusted cash-flow assumptions, scenario sensitivities and per-share valuation. **Bond and credit teams** receive instrument-specific handoffs covering obligor and guarantor, repayment, maturity, refinancing, seniority, collateral, rates/spreads and recovery. **Portfolio managers and investment committees** can inspect exposures, assumptions, missing data and challenge findings before recording a research decision.
+
+A labelled green, transition or sustainability-linked bond receives an additional label-integrity review—not an exemption from credit analysis. The supported routes also distinguish sovereign, municipal and structured credit. These are intended research use cases, not claims of client adoption or a complete production risk platform.
 
 ## What runs, and what does not
 
@@ -14,7 +37,7 @@ The executable engine validates a research request, selects the correct instrume
 
 There is **no embedded LLM, broker connection, live climate/market feed, scheduler or automatic trade execution**. `demo` runs deterministic synthetic fixtures to exercise the workflow; it is not a live investment-analysis run. Software tests are not evidence of alpha, scientific calibration, source entailment or regulatory compliance.
 
-## The workflow
+## Climate risk to equity valuation and bond credit analysis
 
 The source's Figure 7.12 (PDF page 546, chapter 7 printed page 50) connects scenario pathways, economic shocks, issuer/asset value streams and financial impacts. This package operationalises that sequence with explicit intake and review controls.
 
@@ -105,9 +128,9 @@ The revision above is illustrative; replace it with the run's current value. The
 
 Use `SKILL.md` plus the complete adjacent folder contents in a filesystem-enabled agent host. Do not copy only the entry-point file and lose its dependencies. Automatic installation/activation depends on the host and has not been certified for any specific product. In text-only environments the prompts can be applied manually, but no Python state or test gate is then enforced.
 
-## Publish with GitHub Desktop
+## Publishing and local synchronization
 
-Follow [START_HERE_GITHUB_DESKTOP.md](START_HERE_GITHUB_DESKTOP.md): create the local repository, copy the extracted project's **contents into its root**, review and commit, then publish to the personal **HHFinAi** account with **Keep this code private** selected.
+This repository is already published. In GitHub Desktop, use **Fetch origin** and **Pull origin** to synchronize remote changes before editing your local copy. The [Desktop guide](START_HERE_GITHUB_DESKTOP.md) documents initial publication; its private-publishing option is a choice for new copies, not a description of this public repository.
 
 Preserve the local `.git/` directory. Include the supplied `.github/`, `.gitignore` and `.gitattributes` files; they may be hidden by your file manager. Do not upload the ZIP or the source CFA PDF. The guide also covers importing into an already-created remote without replacing its history.
 
@@ -115,6 +138,9 @@ The script `scripts/publish_github.py` is a separate, optional **initial-creatio
 
 ## Source and limitations
 
+The methodological foundation is the user-supplied **897-page CFA UK climate-investing curriculum**. Original workflow engineering, calculations, validation rules and synthetic examples are separately identified as implementation extensions. Neither the source nor the software supplies independent audit certification.
+
+
 See `references/SOURCE_MAP.md` for the ten-chapter map, reviewed operational anchors and one-indexed PDF page convention. The source includes historical policies, standards and market examples; these are not current verification. Quantitative helpers use supplied assumptions and do not turn emissions into default probabilities or precise physical losses.
 
-See `VALIDATION.md` for checks actually run and checks not performed. The source PDF and page images are excluded. There is no CFA UK/CFA Institute affiliation or endorsement. No open-source licence has been selected; see `NOTICE.md`.
+See `VALIDATION.md` for checks actually run and checks not performed. The source PDF and page images are excluded. There is no CFA UK/CFA Institute affiliation or endorsement. Original project code and documentation are distributed under the existing [MIT license](LICENSE). The source curriculum retains its own rights and is not included; see [NOTICE.md](NOTICE.md).

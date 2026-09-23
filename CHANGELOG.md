@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-09-23 - Institutional positioning on republished repository
+
+- Added evidence-led README, quality/control matrix, evidence audit guide and answer-first FAQ.
+- Added software citation metadata, optional LLM documentation index and discovery guidance.
+- Added documentation-reference tests; restored the omitted CI workflow and ignore rules.
+- Preserved the live MIT license and original analytical engine, role contracts and workflow definitions.
+- Refreshed release hashes. About/topics remain owner-managed; no history rewrite, live-agent deployment or ranking uplift is claimed.
+
 ## 2026-09-23 - GitHub Desktop documentation edition
 
 - Added a GUI publishing guide, repository setup values, folder-copy checks and an existing-remote route.

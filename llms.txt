@@ -1,0 +1,21 @@
+# Climate Investment AI Agent in Equity and Bond Markets
+
+> HHFinAi research workflow for institutional-quality equity and bond analysis, with traceable evidence references and auditable local research records.
+
+This is an optional documentation index, not crawler policy or a ranking directive. The Python engine coordinates 20 roles and seven routes. An external host AI agent or human performs research. No LLM, live data feed, scheduler or trading connection is embedded. Institutional quality describes process controls, not independent certification or proven performance.
+
+## Project and evidence
+- [README](https://github.com/HHFinAi/climate-investment-ai-agent-in-equity-and-bond-markets/blob/main/README.md): project definition, audience, controls and quickstart.
+- [Institutional quality](https://github.com/HHFinAi/climate-investment-ai-agent-in-equity-and-bond-markets/blob/main/docs/INSTITUTIONAL_QUALITY.md): claims linked to implementation and tests, with boundaries.
+- [Evidence audit](https://github.com/HHFinAi/climate-investment-ai-agent-in-equity-and-bond-markets/blob/main/docs/EVIDENCE_AUDIT.md): source records, findings, frozen context, revisions and review.
+- [Data contract](https://github.com/HHFinAi/climate-investment-ai-agent-in-equity-and-bond-markets/blob/main/references/data-contract.md): evidence fields and handoff rules.
+- [FAQ](https://github.com/HHFinAi/climate-investment-ai-agent-in-equity-and-bond-markets/blob/main/docs/FAQ.md): direct answers about scope and limitations.
+
+## Technical evaluation
+- [Workflow](https://github.com/HHFinAi/climate-investment-ai-agent-in-equity-and-bond-markets/blob/main/WORKFLOW.md): mandate through human research review.
+- [Claims register](https://github.com/HHFinAi/climate-investment-ai-agent-in-equity-and-bond-markets/blob/main/docs/claims.json): machine-readable claim-to-code/test references.
+- [Validation](https://github.com/HHFinAi/climate-investment-ai-agent-in-equity-and-bond-markets/blob/main/docs/VALIDATION_2026-09-23.md): validation scope and exclusions.
+- [Citation](https://github.com/HHFinAi/climate-investment-ai-agent-in-equity-and-bond-markets/blob/main/CITATION.cff): software citation metadata.
+
+## Boundaries
+Local digests are not tamper-proof storage. Review flags and human decisions are attestations, not authenticated identity or independent verification. Citation entailment, data licensing, production controls and substantive research quality require separate assessment. No CFA UK/CFA Institute affiliation or endorsement; the source PDF is excluded.
