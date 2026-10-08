@@ -1,0 +1,22 @@
+{
+  "repository": "HHFinAi/climate-investment-ai-agent-in-equity-and-bond-markets",
+  "prepared_on": "2026-10-08",
+  "status": "READY_TO_APPLY_NOT_LIVE_STATE",
+  "description": "Climate investment research workflows for equities and bonds: evidence-linked valuation, credit analysis, scenarios and human review.",
+  "topics": [
+    "sustainable-finance",
+    "climate-investment",
+    "equity-research",
+    "fixed-income",
+    "credit-research",
+    "climate-risk",
+    "investment-research",
+    "ai-agents",
+    "agent-skills",
+    "python",
+    "evidence-based",
+    "scenario-analysis"
+  ],
+  "homepage": null,
+  "boundary": "This file records the proposed settings. It does not establish actual GitHub description, topics, hosting or indexing. Read live repository settings before reporting them as applied."
+}

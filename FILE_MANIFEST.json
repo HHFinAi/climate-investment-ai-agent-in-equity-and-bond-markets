@@ -7,10 +7,10 @@
   "source_pdf_included": false,
   "files": {
     ".gitattributes": "1a1dbe176bc233b499d35a57db7513f2941c99ab9759f177830c9149be99005b",
-    ".github/workflows/validate.yml": "ebc01bcb22ac08202afcdbaf988928de361fef13d7e4697d31bcb515a861083c",
+    ".github/workflows/validate.yml": "0fbaa70961accd422e4e25c6430bb3a06cc06670477adcef1086cb34b5698025",
     ".gitignore": "ef20ba354aa8610c8bfed36cfa535b1aa50368b1f74be9a33c57173c2a3fa31b",
     "AGENTS.md": "33a78af02d48142f13125aaf5e1ac4c0792fb5c468bf95a2fceeac38e4106ab5",
-    "CHANGELOG.md": "bbd7abbaf1f685840be84bddb6c8e96a51f43ec4aa2089369fecb972aae7332a",
+    "CHANGELOG.md": "e9b46851a150f4647031688554afa32e60e5ef249580d8b61d3465b7e10092f8",
     "CITATION.cff": "92cc92f03590e2c6800c01c99b0a2ffbf6e688794042af66f1f62af922c5f71d",
     "DESKTOP_VALIDATION.md": "2c8c9b3877d4a15ebe83a07f9c900d2dd25b4f75735ed9e79619dfcec125b8c9",
     "LICENSE": "0096c6f4b18e36749e9652b24d63dbe9d2f36ef66e2ea80e61660c7d3f10b7fd",
@@ -56,6 +56,7 @@
     "docs/INSTITUTIONAL_QUALITY.md": "0eaa38e3a05e835cbe89c2332aef4a1b0171bebbc52599ce990394d6cc83b4ab",
     "docs/VALIDATION_2026-09-23.md": "79a7bf611b23201e9a7a24b484a0161f8ae17862a1b7bcd77091090c1c6b6c85",
     "docs/claims.json": "621a9b471cc80df9a2dddfb6efbb94292d5836c3eac5ff05e42996dabde997d4",
+    "docs/proposed-github-metadata.json": "9284c5980532fc1ece3db2abf7c0afe87600d7e1feebf4f7255bd708d1a69415",
     "examples/WORKED_EXAMPLE.md": "96436634c5b4a913ee3386c2599f0d5f80d7ae225816601a82902e5b6f123017",
     "examples/expected-calculations.json": "aaa376438a50607b3397855def98c44a79afa5887ecac031ad960bf4a31f353c",
     "examples/mandate-artifact.json": "1bb55a97f93a6c1b677eca4789bbf7b536d12424639787600942358f226693df",
@@ -80,8 +81,11 @@
     "schemas/run-input.schema.json": "9db95d286be29000f60aaf27d2e04bf9ca407c31a6d7f883728c76f95ba01224",
     "scripts/build_release.py": "531b59d319345c1dc85391122e9e3700b773070c9393423ad5cee9009cc5c7d7",
     "scripts/check_documentation.py": "4938e5d8d7671dc7e1a3b17937e6d2de45e6864228655d42ff8f84ead5dcc146",
+    "scripts/check_release_manifest.py": "30c009030af1d20f824bbba0979dafd627eab169f49b79c837b75105f712f2de",
     "scripts/check_repository.py": "d78fadcf02faeac36c8d59d4744332115db5835da7fad8166ba36331e508ab4e",
     "scripts/publish_github.py": "9c593a20372c7a116e6da5caa8c1dcd5751310597bfee6a4f8a14c479cbd2fc2",
+    "scripts/validate_repository.py": "5350fe1cf9443b8021cf90cb5fcec1314e5983bd34c08c7c03057ed3a35c24e3",
+    "scripts/validation_targets.json": "8b53c8e32380fa245ed8549cb0944990df2de6f71612e88c40be478a00fddbd0",
     "templates/bond-review.md": "e5109645517071513ed846e8cc9fe571eb49139a73ebb8f8787a2362bb191117",
     "templates/evidence-register.csv": "aacce11dc2c1e7a9a7456fde0589fc04efa4c418826496a3c7392c71b73b61a4",
     "templates/investment-memo.md": "e52b1050cebf733a6cca0605c46669037af885824b6293f3f4307174d541d8bf",
@@ -91,6 +95,7 @@
     "tests/test_calculations.py": "f5ea0cc886f179e4b4c976a8313076174d42215f2361f9094d6975948080d760",
     "tests/test_documentation.py": "fc3eb616bf98475220118d31ef3a235b63f85a5a7cdc1cb4c2cd37a4afffbd10",
     "tests/test_package.py": "e5e9949788f04e60be3a674978199fa633e6ee745ef5da897608b75e3977c8e2",
+    "tests/test_release_inventory.py": "9eef0f81f9b6ca27d57d2a4f50fbba79bdfcbe8b8d8134d022b2ed36db5c6d49",
     "tests/test_validation.py": "3ac06e42c7bdf6df35af791338f05007f74e3cf43a9e01b9e089e91d3ebe1d79",
     "tests/test_workflow.py": "2a0ce2339266e5483999274f11482dce83a73054cd380bca3b986a037b38b15f",
     "workflows/corporate-bond.json": "767d3ef3c3b5740dbd3eace7c3b2b4cc0b988de22a9ba357e8ff1c051382ecd4",
@@ -100,5 +105,8 @@
     "workflows/municipal-bond.json": "69e810f21aa8c9f9f4232c06d6a21ea7dd999b4fcf95a22d8b88884e6090e497",
     "workflows/sovereign-bond.json": "e1340adca4d40ea9e4745e1467b88abf13be7b2c77e0f6cf5890d182cc527ff2",
     "workflows/structured-credit.json": "c0129597ee488dbc5f7b0dbdfa6dd20f2ee4dcbecc6da2b53ee4ddd9e9a24b05"
-  }
+  },
+  "unsigned_integrity_manifest": true,
+  "inventory_reviewed_on": "2026-10-08",
+  "inventory_scope": "Reviewed public repository files; top-level transient runs/exports/outputs excluded. Nested evaluation archives are included. This unsigned inventory is not authenticated provenance or independent source verification."
 }
