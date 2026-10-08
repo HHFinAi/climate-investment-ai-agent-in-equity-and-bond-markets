@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-10-08 — Research completion and reproducibility
+
+- Prepared a concrete GitHub description/topics settings file, explicitly distinguished from live account settings.
+- Added consolidated validation logs and unsigned release-inventory verification; retained the existing runtime and evidence controls.
+
 ## 2026-09-23 - Institutional positioning on republished repository
 
 - Added evidence-led README, quality/control matrix, evidence audit guide and answer-first FAQ.
