@@ -1,0 +1,30 @@
+{
+  "version": "1",
+  "checks": [
+    {
+      "name": "documentation",
+      "arguments": [
+        "scripts/check_documentation.py"
+      ]
+    },
+    {
+      "name": "guarded-release-files",
+      "arguments": [
+        "-c",
+        "from pathlib import Path; from scripts.publish_github import release_files; print(len(release_files(Path('.'))), 'release files verified')"
+      ]
+    },
+    {
+      "name": "multi-asset-smoke",
+      "arguments": [
+        "-m",
+        "climate_agent",
+        "demo",
+        "--workflow",
+        "multi-asset",
+        "--out",
+        "{run_output}/multi-asset-smoke"
+      ]
+    }
+  ]
+}
