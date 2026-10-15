@@ -12,6 +12,8 @@ Engine **0.1.0** · **20 specialist roles** · **7 instrument-aware workflows** 
 
 [Evidence and audit trail](docs/EVIDENCE_AUDIT.md) · [Institutional-quality controls](docs/INSTITUTIONAL_QUALITY.md) · [FAQ](docs/FAQ.md) · [Workflow](WORKFLOW.md) · [Validation scope](docs/VALIDATION_2026-09-23.md) · [Software citation](CITATION.cff)
 
+Start with the [AI infrastructure research handoff](examples/ai-infrastructure/README.md), prepared 16 October 2026: delivery economics, climate mechanisms and equity/credit boundaries are linked to an original primary-source case. The project model is illustrative; issuer underwriting remains NEEDS_DATA.
+
 ## What makes the evidence layer traceable and auditable?
 
 | Investment-research requirement | Implemented control | Inspect the evidence |
