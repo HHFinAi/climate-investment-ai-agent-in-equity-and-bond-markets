@@ -16,7 +16,7 @@
     "LICENSE": "0096c6f4b18e36749e9652b24d63dbe9d2f36ef66e2ea80e61660c7d3f10b7fd",
     "NOTICE.md": "63682c8cd7843035bc840edfc5963a6461fec0a7cb5ef19d4389e19678bcd3f9",
     "PUBLISHING.md": "8403992483256e937ee1866b3a5b02aff50f11a01482f8fc6e9b4625435efa13",
-    "README.md": "176c4357962ab2accddd28437cac6370bad9aca8d213ba0a3b22fe6ea54391bf",
+    "README.md": "4686a56a09be0c2f754c6d6a3857ca4fb931a38d0c2077a4d087d799444917c7",
     "SKILL.md": "f8918f12fce54ee6686543239add658d621694b13c2a95fc44709ea37396b7d1",
     "START_HERE_GITHUB_DESKTOP.md": "36fee8b96f944b2e86f7591af020ddf89731e0897137b117b44d9ceca8a1ae97",
     "VALIDATION.json": "2b83b806ca630fb65d08b52e7bfce97feb012ee05b70e5574efaaa3f5c7db833",
@@ -59,6 +59,7 @@
     "docs/proposed-github-metadata.json": "9284c5980532fc1ece3db2abf7c0afe87600d7e1feebf4f7255bd708d1a69415",
     "examples/WORKED_EXAMPLE.md": "96436634c5b4a913ee3386c2599f0d5f80d7ae225816601a82902e5b6f123017",
     "examples/ai-infrastructure/README.md": "5a96a5596f4d63bbf8105ac60dbf8cb42ce6031e3908bf82ef2810acdeab9e78",
+    "examples/climate-staples/README.md": "de1cb612bdee7473cff131b5370d02da07b6d2bd0c89bcc8ed5364b79e43695e",
     "examples/expected-calculations.json": "aaa376438a50607b3397855def98c44a79afa5887ecac031ad960bf4a31f353c",
     "examples/mandate-artifact.json": "1bb55a97f93a6c1b677eca4789bbf7b536d12424639787600942358f226693df",
     "examples/requests/corporate-bond.json": "99de9f2ee26e69cc454997b77defd785f4fb503cc7f519d32ea7437c1f6d3f83",
@@ -108,6 +109,7 @@
     "workflows/structured-credit.json": "c0129597ee488dbc5f7b0dbdfa6dd20f2ee4dcbecc6da2b53ee4ddd9e9a24b05"
   },
   "unsigned_integrity_manifest": true,
-  "inventory_reviewed_on": "2026-10-08",
-  "inventory_scope": "Reviewed public repository files; top-level transient runs/exports/outputs excluded. Nested evaluation archives are included. This unsigned inventory is not authenticated provenance or independent source verification."
+  "inventory_reviewed_on": "2026-10-21",
+  "inventory_scope": "Reviewed public repository files; top-level transient runs/exports/outputs excluded. Nested evaluation archives are included. This unsigned inventory is not authenticated provenance or independent source verification.",
+  "inventory_updated_by": "AI assistant; byte inventory check, not independent human source validation."
 }
