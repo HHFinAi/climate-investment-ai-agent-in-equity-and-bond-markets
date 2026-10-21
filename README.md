@@ -1,5 +1,7 @@
 # Climate Investment AI Agent in Equity and Bond Markets
 
+> **Responsible AI:** Analyst-controlled research; verify evidence, disclose AI assistance and protect confidential information. [Policy and project-specific checks](RESPONSIBLE_AI.md).
+
 **New research handoff, 21 October 2026:** [Climate and staples — weather is not an earnings forecast](examples/climate-staples/README.md). A public-source three-issuer case links procurement, hedging, inventory, pricing and demand to a reproducible financial model, and exposes a material accounting comparability issue. Climate attribution and issuer exposure remain `NEEDS_DATA`.
 
 **Built for institutional-quality climate investment research—with a traceable, auditable evidence layer.**
