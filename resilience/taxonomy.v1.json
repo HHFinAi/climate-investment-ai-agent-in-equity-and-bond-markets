@@ -1,0 +1,49 @@
+{
+  "version": "1.0",
+  "date": "2026-11-18",
+  "provenance": "Original HHFinAI categorical extension inspired by Morgan Stanley Research 13 November 2026; no reproduction of proprietary stock lists.",
+  "categories": [
+    {
+      "id": "monitoring_early_warning",
+      "name": "Climate monitoring and early warning",
+      "demand_mechanism": "sensor and hazard alert procurement",
+      "required_research": "forecast calibration, funding"
+    },
+    {
+      "id": "cooling_hvac",
+      "name": "Cooling, heat, ventilation and air conditioning",
+      "demand_mechanism": "installed base, retrofits, recurring service",
+      "required_research": "electricity cost, funded orders"
+    },
+    {
+      "id": "insurance_financing",
+      "name": "Insurance and financing",
+      "demand_mechanism": "underwriting and funded adaptation",
+      "required_research": "claims tail, pricing cycle, reinsurance capital"
+    },
+    {
+      "id": "resilient_agriculture",
+      "name": "Resilient agriculture, forestry and aquaculture",
+      "demand_mechanism": "irrigation, drought resilience",
+      "required_research": "farmer ability to pay, water rights"
+    },
+    {
+      "id": "resilient_power",
+      "name": "Resilient power systems",
+      "demand_mechanism": "grid upgrades, storage, backup",
+      "required_research": "utility budget approval, AI-grid overlap"
+    },
+    {
+      "id": "resilient_urban",
+      "name": "Resilient urban infrastructure",
+      "demand_mechanism": "flood defenses, building materials",
+      "required_research": "local awarded projects, haulage radius"
+    },
+    {
+      "id": "water_infrastructure",
+      "name": "Water infrastructure and management",
+      "demand_mechanism": "water treatment, reuse, leak detection",
+      "required_research": "tariff and municipal credit, project permits"
+    }
+  ]
+}

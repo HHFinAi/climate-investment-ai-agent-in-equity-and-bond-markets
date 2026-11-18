@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0",
+  "prepared": "2026-11-18",
+  "purpose": "Three hypothetical adaptation business-model sensitivities, not research estimates",
+  "cases": [
+    {
+      "case_id": "hvac",
+      "category": "cooling_hvac",
+      "currency": "USD",
+      "role": "supplier",
+      "candidate_tickers": [
+        "TT",
+        "JCI",
+        "CARR"
+      ],
+      "assumption_provenance": "Synthetic analyst assumptions in millions of declared currency; no issuer revenue, EPS or price forecast",
+      "assumptions": {
+        "horizon_years": 5,
+        "discount_rate": 0.1,
+        "cash_tax_rate": 0.25,
+        "annual_depreciation_m": 1,
+        "upfront_capex_m": 20,
+        "potential_incremental_revenue_m": 50,
+        "revenue_realization": 0.6,
+        "contribution_margin": 0.28,
+        "annual_fixed_opex_m": 2,
+        "annual_recurring_capex_m": 1,
+        "annual_working_capital_add_m": 0.5
+      },
+      "risk_treatments": [
+        {
+          "risk_id": "hvac-physical-channel",
+          "channel": "cashflow"
+        }
+      ],
+      "evidence_gates": {
+        "asset_location_verified": false,
+        "payer_identified": false,
+        "funding_approved": false,
+        "issuer_exposure_verified": false,
+        "issuer_financials_verified": false,
+        "current_security_price_verified": false,
+        "human_review_completed": false
+      }
+    },
+    {
+      "case_id": "grid",
+      "category": "resilient_power",
+      "currency": "USD",
+      "role": "supplier",
+      "candidate_tickers": [
+        "GEV",
+        "HUBB",
+        "FLNC"
+      ],
+      "assumption_provenance": "Synthetic analyst assumptions in millions of declared currency; no issuer revenue, EPS or price forecast",
+      "assumptions": {
+        "horizon_years": 5,
+        "discount_rate": 0.1,
+        "cash_tax_rate": 0.25,
+        "annual_depreciation_m": 1,
+        "upfront_capex_m": 30,
+        "potential_incremental_revenue_m": 80,
+        "revenue_realization": 0.45,
+        "contribution_margin": 0.25,
+        "annual_fixed_opex_m": 3,
+        "annual_recurring_capex_m": 2,
+        "annual_working_capital_add_m": 1.5
+      },
+      "risk_treatments": [
+        {
+          "risk_id": "grid-physical-channel",
+          "channel": "cashflow"
+        }
+      ],
+      "evidence_gates": {
+        "asset_location_verified": false,
+        "payer_identified": false,
+        "funding_approved": false,
+        "issuer_exposure_verified": false,
+        "issuer_financials_verified": false,
+        "current_security_price_verified": false,
+        "human_review_completed": false
+      }
+    },
+    {
+      "case_id": "cement",
+      "category": "resilient_urban",
+      "currency": "EUR",
+      "role": "supplier",
+      "candidate_tickers": [
+        "HEI.DE"
+      ],
+      "assumption_provenance": "Synthetic analyst assumptions in millions of declared currency; no issuer revenue, EPS or price forecast",
+      "assumptions": {
+        "horizon_years": 5,
+        "discount_rate": 0.1,
+        "cash_tax_rate": 0.25,
+        "annual_depreciation_m": 1,
+        "upfront_capex_m": 15,
+        "potential_incremental_revenue_m": 30,
+        "revenue_realization": 0.35,
+        "contribution_margin": 0.3,
+        "annual_fixed_opex_m": 1,
+        "annual_recurring_capex_m": 1,
+        "annual_working_capital_add_m": 0.5
+      },
+      "risk_treatments": [
+        {
+          "risk_id": "cement-physical-channel",
+          "channel": "cashflow"
+        }
+      ],
+      "evidence_gates": {
+        "asset_location_verified": false,
+        "payer_identified": false,
+        "funding_approved": false,
+        "issuer_exposure_verified": false,
+        "issuer_financials_verified": false,
+        "current_security_price_verified": false,
+        "human_review_completed": false
+      }
+    }
+  ]
+}

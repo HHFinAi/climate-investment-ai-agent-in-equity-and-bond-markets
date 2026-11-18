@@ -150,3 +150,8 @@ The methodological foundation is the user-supplied **897-page CFA UK climate-inv
 See `references/SOURCE_MAP.md` for the ten-chapter map, reviewed operational anchors and one-indexed PDF page convention. The source includes historical policies, standards and market examples; these are not current verification. Quantitative helpers use supplied assumptions and do not turn emissions into default probabilities or precise physical losses.
 
 See `VALIDATION.md` for checks actually run and checks not performed. The source PDF and page images are excluded. There is no CFA UK/CFA Institute affiliation or endorsement. Original project code and documentation are distributed under the existing [MIT license](LICENSE). The source curriculum retains its own rights and is not included; see [NOTICE.md](NOTICE.md).
+
+
+## Climate resilience investment intelligence — 18 November 2026
+
+The [original research extension](resilience/README.md) introduces seven adaptation categories, supplier/operator/insurer scenario economics, bankability and evidence gates, a three-theme research casebook (HVAC, grid, flood-defence cement) and frozen El Niño hypotheses. All numerical cases are illustrative and **NEEDS_DATA**, not security valuations.

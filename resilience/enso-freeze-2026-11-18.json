@@ -1,0 +1,46 @@
+{
+  "version": "1.0",
+  "frozen_at": "2026-11-18",
+  "source": "NOAA CPC diagnostic discussion, issued 2026-11-12",
+  "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml",
+  "strength_forecast": "Greater than 79% probability of strong-to-very-strong El Niño through Jan-Mar 2027; NOT a local hazard or return probability.",
+  "next_update_scheduled": "2026-12-10",
+  "hypotheses": [
+    {
+      "id": "crop-001",
+      "outcome": "PENDING",
+      "question": "Does observed regional rainfall anomaly explain documented crop-yield variance after comparison with planting calendar and independent baseline?",
+      "needs": [
+        "crop calendar",
+        "region",
+        "rainfall",
+        "yield",
+        "control"
+      ]
+    },
+    {
+      "id": "power-002",
+      "outcome": "PENDING",
+      "question": "Does local heat or drought lead to verifiable plant outages and material utility cash flows?",
+      "needs": [
+        "generator coordinates",
+        "outages",
+        "power price",
+        "contracts"
+      ]
+    },
+    {
+      "id": "freight-003",
+      "outcome": "PENDING",
+      "question": "Does observed canal transit disruption affect supplier landed costs beyond contractual pass-through?",
+      "needs": [
+        "route exposure",
+        "transits",
+        "shipping prices",
+        "contracts"
+      ]
+    }
+  ],
+  "security_return_prediction": null,
+  "source_verification": "Official outlook verified on 2026-11-18; issuer evidence absent."
+}
