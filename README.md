@@ -4,6 +4,8 @@
 
 **New research handoff, 21 October 2026:** [Climate and staples — weather is not an earnings forecast](examples/climate-staples/README.md). A public-source three-issuer case links procurement, hedging, inventory, pricing and demand to a reproducible financial model, and exposes a material accounting comparability issue. Climate attribution and issuer exposure remain `NEEDS_DATA`.
 
+**November 2026 methodological extension:** [SAI / marine cloud brightening cost sensitivities](examples/solar-geoengineering/README.md) — synthetic cost mathematics with explicit zero carbon-removal credit, no deployment claims and no investable revenue attribution.
+
 **Built for institutional-quality climate investment research—with a traceable, auditable evidence layer.**
 
 The **Climate Investment AI Agent by HHFinAi** is a Python research workflow for institutional equity analysts, fixed-income investors, portfolio managers and investment committees. It connects climate-risk analysis to equity valuation, bond credit analysis and portfolio review while preserving evidence references, dated source records, analytical assumptions, calculation explanations, revisions and human research decisions.
