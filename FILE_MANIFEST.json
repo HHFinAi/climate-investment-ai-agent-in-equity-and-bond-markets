@@ -16,7 +16,7 @@
     "LICENSE": "0096c6f4b18e36749e9652b24d63dbe9d2f36ef66e2ea80e61660c7d3f10b7fd",
     "NOTICE.md": "63682c8cd7843035bc840edfc5963a6461fec0a7cb5ef19d4389e19678bcd3f9",
     "PUBLISHING.md": "8403992483256e937ee1866b3a5b02aff50f11a01482f8fc6e9b4625435efa13",
-    "README.md": "f00298812827afd62da3a696b22492d8d544c4dd3df00d06773e14fabfe8495e",
+    "README.md": "35833151e9f3452e8eb9d7a136d10c2c0e277ad515267bacf8464a1adcff9406",
     "SKILL.md": "f8918f12fce54ee6686543239add658d621694b13c2a95fc44709ea37396b7d1",
     "START_HERE_GITHUB_DESKTOP.md": "36fee8b96f944b2e86f7591af020ddf89731e0897137b117b44d9ceca8a1ae97",
     "VALIDATION.json": "2b83b806ca630fb65d08b52e7bfce97feb012ee05b70e5574efaaa3f5c7db833",
@@ -107,7 +107,11 @@
     "workflows/municipal-bond.json": "69e810f21aa8c9f9f4232c06d6a21ea7dd999b4fcf95a22d8b88884e6090e497",
     "workflows/sovereign-bond.json": "e1340adca4d40ea9e4745e1467b88abf13be7b2c77e0f6cf5890d182cc527ff2",
     "workflows/structured-credit.json": "c0129597ee488dbc5f7b0dbdfa6dd20f2ee4dcbecc6da2b53ee4ddd9e9a24b05",
-    "RESPONSIBLE_AI.md": "4eead4236b9af8df6dd0fc23c60bdc90addb8f56dcaa759cc8ddd76daa50466d"
+    "RESPONSIBLE_AI.md": "4eead4236b9af8df6dd0fc23c60bdc90addb8f56dcaa759cc8ddd76daa50466d",
+    "examples/solar-geoengineering/inputs.json": "932940ecb85e45599691c6e9ca40b2f52fe9af2be93465e2f02ef7695f04dec2",
+    "examples/solar-geoengineering/model.py": "cdf63cc5aab96a2efae5d52c29bb4c11f53f465475d5d75689d1de714eb91df7",
+    "examples/solar-geoengineering/README.md": "023b4e0f36b78c21f060b17badb5c854abb870c4e88e55925b03f8faf69f073c",
+    "tests/test_solar_geoengineering.py": "9a4d5d59b748230d21632e3c9ae05658b33df074b6e19a07f0f3c703375de7cb"
   },
   "unsigned_integrity_manifest": true,
   "inventory_reviewed_on": "2026-10-21",

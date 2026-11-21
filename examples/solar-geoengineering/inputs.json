@@ -1,0 +1,50 @@
+{
+  "case_id": "SOLAR-GEOENGINEERING-METHOD-2026-11-21",
+  "as_of": "2026-11-21",
+  "classification": "ILLUSTRATIVE_ENGINEERING_COST_SENSITIVITY_NOT_CLIMATE_PROJECTION",
+  "target_global_cooling_c": 0.5,
+  "model_horizon": "one hypothetical recurring deployment year",
+  "sai": {
+    "required_forcing_w_m2_per_c": 1.5,
+    "sulfate_effectiveness_w_m2_per_tg_sulfur_per_year": 0.3,
+    "so2_mass_per_sulfur_mass": 2,
+    "all_in_delivery_usd_per_t_so2": 5500
+  },
+  "mcb": {
+    "dry_sea_salt_tg_per_year_per_c": 60,
+    "atomization_and_lofting_gwh_per_tg": 5000,
+    "marine_generation_all_in_lcoe_usd_per_mwh": 160,
+    "non_energy_annual_cost_usd_bn_per_c": 6
+  },
+  "sensitivity": {
+    "sai_effectiveness_w_m2_per_tg_sulfur_per_year": [
+      0.15,
+      0.3,
+      0.5
+    ],
+    "sai_delivery_usd_per_t_so2": [
+      4000,
+      5500,
+      7500
+    ],
+    "mcb_salt_tg_per_year_per_c": [
+      30,
+      60,
+      120
+    ],
+    "mcb_power_gwh_per_tg": [
+      3000,
+      5000,
+      7000
+    ]
+  },
+  "governance": "RESEARCH_ONLY_NO_DEPLOYMENT_AUTHORIZATION",
+  "disclaimers": [
+    "Hypothetical inputs, not Goldman Sachs model outputs, deployment quotes or scientifically calibrated cooling forecasts.",
+    "SRM does not remove atmospheric CO2 and does not earn carbon removal credits.",
+    "Costs exclude environmental and regional climate damages, global governance and liability, R&D, independent verification and operational emissions.",
+    "LCOE includes generation capital/operating costs; do not add generation capex as a second separate cost.",
+    "Marine non-energy annual costs exclude the power generation already covered in the LCOE.",
+    "A physical cost sensitivity is not a probability distribution, investment revenue forecast or policy authorization."
+  ]
+}
